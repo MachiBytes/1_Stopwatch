@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+
+* {
+	font-family: "Comfortaa", cursive;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: darkkhaki;
+	font-family: "Comfortaa", cursive;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+}
+
+#timer {
+	text-align: center;
+	width: 80%;
+	height: 100vh;
+	margin: 0;
+	padding: 140px 0;
+	box-sizing: border-box;
+}
+
+#laps {
+	width: 20%;
+	height: 60vh;
+	padding: 0 0 50px 0;
+	position: relative;
+}
+
+#laps h1 {
+	position: fixed;
+	background-color: darkkhaki;
+}
+
+#lapTimes {
+	position: absolute;
+	top: 50px;
+	height: 50vh;
+	width: 80%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#lapTimes::-webkit-scrollbar {
+	background-color: transparent;
+	width: 10px;
+}
+
+#lapTimes::-webkit-scrollbar-thumb {
+	background-color: black;
+	border-radius: 20px;
+	border: 3px solid black;
+}
+
+p {
+	font-size: 100px;
+	font-family: "IBM Plex Mono", monospace;
+	margin: 0 0 75px 0;
+}
+
+button {
+	width: 150px;
+	height: 150px;
+	border: none;
+	border-radius: 50%;
+
+	font-size: 30px;
+	font-weight: 700;
+
+	margin: 0px 20px;
+
+	color: darkkhaki;
+	background-color: black;
+}
+
+ul {
+	list-style-image: url("clock.png");
+	padding: 0 10px;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+li {
+	font-family: "IBM Plex Mono", monospace;
+	margin: 0 0 10px 15px;
+}
